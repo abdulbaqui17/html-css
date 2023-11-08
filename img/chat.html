@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guess the Number</title>
+  <style>
+    /* CSS styles go here */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 400px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    p {
+      color: #777;
+      text-align: center;
+    }
+
+    .input-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    input[type="number"] {
+      padding: 10px;
+      width: 100px;
+      border-radius: 4px;
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <title>Guess the Number</title>
+        <style>
+          /* CSS styles go here */
+          body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+          }
+      
+          .container {
+            width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          }
+      
+          h1 {
+            color: #333;
+            text-align: center;
+          }
+      
+          p {
+            color: #777;
+            text-align: center;
+          }
+      
+          .input-container {
+            text-align: center;
+            margin-top: 20px;
+          }
+      
+          input[type="number"] {
+            padding: 10px;
+            width: 100px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+          }
+      
+          button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+          }
+      
+          .message {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+            font-size: 18px;
+            color: #333;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container">
+          <h1>Guess the Number</h1>
+          <p>Try to guess the randomly generated number between 1 and 100.</p>
+          <div class="input-container">
+            <input type="number" id="guess" min="1" max="100" placeholder="Enter your guess" />
+            <button onclick="checkGuess()">Guess</button>
+          </div>
+          <div class="message" id="message"></div>
+        </div>
+      
+        <script>
+          // JavaScript code for the game logic
+          function checkGuess() {
+            var number = Math.floor(Math.random() * 100) + 1; // Generate random number between 1 and 100
+            var guess = parseInt(document.getElementById("guess").value); // Get user's guess
+      
+            if (isNaN(guess) || guess < 1 || guess > 100) {
+              document.getElementById("message").innerHTML = "Please enter a valid number between 1 and 100.";
+            } else if (guess < number) {
+              document.getElementById("message").innerHTML = "Too low! Try again.";
+            } else if (guess > number) {
+              document.getElementById("message").innerHTML = "Too high! Try again.";
+            } else {
+              document.getElementById("message").innerHTML = "Congratulations! You guessed the number.";
+            }
+          }
+        </script>
+      </body>
+      </html>
+      
