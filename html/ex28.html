@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>form</title>
+        <link rel="icon" href="/html/what.png"/>
+    </head>
+    <body>
+        <div>
+            <h2>how to take input form user</h2>
+        </div>
+        <form action="backend.nodejs">
+            <div>
+                <label for="use"> name</label>
+                <input type="text" name="name" id="use" placeholder="username">
+            </div>
+            <br>
+            <div>
+                date:<input type="date" name="" id="" placeholder="dateofbirth">
+            </div>
+            <br>
+            <div>
+                <label for="e">email</label>
+                <input type="email" name="eam" id="e" placeholder="email" required><span>*</span>
+            </div>
+            <br>
+            <div>
+                date and time<input type="datetime-local" name="" id="" >
+            </div>
+            <br>
+            <div>
+                elegible:<input type="checkbox" name="" id="" checked>
+            </div>
+            <br>
+            <div>
+                <label for="read">readonly</label>
+                <input type="text" name="" id="read" value="you cant change me" readonly>
+            </div>
+            <div>
+                male:<input type="radio" name="gender" id="male">
+                female:<input type="radio" name="gender" id="female">
+                other:<input type="radio" name="gender" id="other">
+            </div>
+            <br>
+            <div>
+                <label for="tex">enter your text</label>
+                 <br><textarea name="text" id="tex" cols="50" rows="10">hello</textarea>
+            </div>
+            <br>
+            <div>
+            <label for="pay">payment</label>
+            <select name="poy" id="pay">
+                <option value="visa">visa</option>
+                <option value="credit card">credit card</option>
+                <option value="cash on develiary">cash on develiary</option>
+            </select>
+            </div>
+            <br>
+            <div>
+                <input type="submit" name="" id="" value="submit now ">
+                <input type="reset" name="" id="" value="reset now">
+            </div>
+        </form>
+
+    </body>
+</html>

@@ -1,0 +1,63 @@
+<!--
+pseudo class
+	Syn:						 tag/id/class/child :hover {
+											prop:val;
+											.......
+										}
+	Syn:						tag/id/class/child :first-child {
+											prop:val;
+											.......
+									}				
+
+last-child
+	Syn:						tag/id/class/child :last-child {
+											prop:val;
+											.......
+									}				
+
+nth-child
+	Syn:						tag/id/class/child :nth-child(pos/even/odd) {
+											prop:val;
+											.......
+									}				
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Ex40</title>
+	<link rel="icon" href="/html/face.png"/>
+	<style>
+			h1:hover{
+				width: 400px;
+                background-color: bisque;
+                border-radius:15px;
+			}
+			h2:hover{
+				border-radius:15px;
+                background-color: black;
+                color: white
+			}
+		ol li:first-child{
+				color:red;
+			}
+		ol li:last-child{
+				color:rgb(0, 0, 255);
+        }
+        ol li:nth-child(even){
+            color: aquamarine;
+
+        }
+	</style>
+  </head>
+  <body>
+		<h1>demo on pseudo classes</h1>
+		<h2 style=" width:400px;">demo on hover</h2>
+		<ol>
+			<li>HDFC</li>		<li>Citi</li>		<li>ICICI</li>
+			<li>Kotak</li>		<li>Axis</li>		<li>IndusInd</li>
+			<li>SBI</li>			<li>Standard Chartered</li>
+			<li>HSBC</li>		<li>Yes</li>
+		</ol>
+
+  </body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 250px;
+            background-color: plum;
+            color: blue;
+            margin: auto;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+          }
+          
+        button:hover {
+            background-color: white;
+            color: blue;
+            box-shadow: 0px 0px 10px rgba(0,0,255,0.5);
+          }
+          
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td> <label>html</label> </td>
+				<td> <input type="text" name="" id="ht" maxlength="3"> </td>
+            </tr>
+            <br>
+            <tr>
+                <td> <label>css</label> </td>
+				<td> <input type="text" name="" id="cs" maxlength="3"> </td>
+            </tr>
+            <br>
+            <tr>
+                <td> <label>javascript</label> </td>
+				<td><input type="text" name="" id="js" maxlength="3"></td>
+            </tr>
+            <br>
+            <tr>
+                <td><label>bootstrap</label></td>
+				<td><input type="text" name="" id="bs" maxlength="3"></td>
+            </tr>
+            <tr align="center">
+                <td colspan="2"><button onclick="marks()">submit</button></td>
+            </tr>
+            <tr align="right">
+                <td>
+					<output id="total"></output>
+                	<output id="avge"></output>
+                	<output id="grade"></output>
+				</td>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function marks()
+        {
+        let h,c,j,b,t,gd,tot,avg
+        h=+ht.value
+        c=+cs.value
+        j=+js.value
+        b=+bs.value
+        tot=h+c+j+b
+        avg=total/4
+        if(h>39&&c>39&&j>39&&b>39)
+			{
+				//"pass"
+				if(avg>=90&&avg<=100)
+					grd="A+";
+				else if(avg>=80&&avg<=89)
+					grd="A";
+				else if(avg>=70&&avg<=79)
+					grd="B+";
+				else if(avg>=60&&avg<=69)
+					grd="B";
+				else if(avg>=50&&avg<=59)
+					grd="C";
+				else
+					grd="D"				
+			} else {
+				grd="Fail";
+			}
+			//displaying op
+			total.value="Total Marks	:"+tot;
+			avge.value="Average		:"+avg;
+			grade.value="Grade		:"+gd;
+		}
+            
+        
+        
+    </script>
+</body>
+</html>-->
+js32.html
+<!--  Student Marks report 
+Avg			Grade
+90-100	A+
+80-89		A
+70-79		B+
+60-69		B
+50-59		C
+40-49		D
+0-39		Fail
+Note:   min marks 40
+ 
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+	<meta charset="UTF-8">
+	<title>JS31</title>
+ </head>
+ <body>
+		<table style="margin:auto; background:#ffccff; color:blue;">
+			<caption><h2>Mark	s Report</h2></caption>
+			<tr>
+				<td> <label>RollNo</label> </td>
+				<td> <input type="text" id="rno"> </td>
+			</tr>
+			<tr>
+				<td> <label>Name</label> </td>
+				<td> <input type="text" id="sna"> </td>
+			</tr>
+			<tr>
+				<td>Marks in:</td>
+			</tr>
+			<tr>
+				<TD> <label>HTML</label> </td>
+				<td> <input type="text" id="html" maxlength="3"> </td>
+			</tr>
+			<tr>
+				<td> <label>CSS</label> </td>
+				<td> <input type="text" id="css" maxlength="3"> </tD>
+			</tr>
+			<tr>
+				<td> <label>JavaScript</label> </td>
+				<td> <input type="text" id="js" maxlength="3"> </td>
+			</tr>
+			<tR>
+				<td> <label>BootStrap</label> </td>
+				<td> <input type="text" id="bs" maxlength="3"> </td>
+			</tr>
+			<tr align="center">
+				<td colspan="2"> <button onclick="getResult()">get result</button> </td>
+			</tr>
+			<tr align="right">
+				<td colspan="2"> 
+					<output id="total"></output> <bR>
+					<output id="average"></output> <bR>
+					<output id="grade"></output> <bR>
+				</td>
+			</tr>
+		</table>
+	<script>
+		function getResult()
+		{
+			let hm, cm, jm, bm, tot, avg, grd;	//local decs
+			hm = +html.value;		//data coll
+			cm = +css.value;
+			jm = +js.value;
+			bm = +bs.value;
+			tot = hm+cm+jm+bm;		//calc's
+			avg = tot/4;
+			//grade finding
+			if(hm>39&&cm>39&&jm>39&&bm>39)
+			{
+				//"pass"
+				if(avg>=90&&avg<=100)
+					grd="A+";
+				else if(avg>=80&&avg<=89)
+					grd="A";
+				else if(avg>=70&&avg<=79)
+					grd="B+";
+				else if(avg>=60&&avg<=69)
+					grd="B";
+				else if(avg>=50&&avg<=59)
+					grd="C";
+				else
+					grd="D"				
+			} else {
+				grd="Fail";
+			}
+			//displaying op
+			total.value="Total Marks	:"+tot;
+			average.value="Average		:"+avg;
+			grade.value="Grade		:"+grd;
+		}
+	</script>
+ </body>
+</html>

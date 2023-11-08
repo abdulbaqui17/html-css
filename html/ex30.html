@@ -1,0 +1,24 @@
+<!-- example on "input" field --> 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Ex53</title>
+	<link rel="icon" href="man.png"/>
+   </head>
+  <body>
+	<h2>demo on file upload</h2>		
+		<form action="uploadfiles.php">
+			<input type="file" id="f1" name="f1"/>  <!-- 1file, any size, any type -->
+			<bR>
+			<input type="file" id="f2" name="f2" multiple/>
+			<br>
+			<input type="file" id="f3" name="f3" accept=".pdf,.docx" />
+			<br>
+					accept="image/*"			accept="audio/*"		accept="video/*"
+					accept="application/*"
+			<br> 
+			<input type="submit" value="Upload" name="sb"/>
+		</form>
+
+  </body>
+</html>

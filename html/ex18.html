@@ -1,0 +1,80 @@
+<!--
+display prop
+			flex, grid, inline, block, inline-block, none
+
+flex ==> option used to display html elements either in column format or row format
+		Syn:			display:flex;
+
+							flex-direction:row/row-reverse/column/column-reverse;
+							flex-wrap:nowrap/wrap;
+							gap:Npx;
+							justify-content
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>flex</title>
+        <link rel="icon" href="/html/face.png">
+        <style>
+            #flex{
+                font-size:34px;
+                display:flex;
+                flex-direction:row; 
+                gap:10px;
+                flex-wrap:wrap;
+                justify-content:center;
+                background-color: black;
+                color: darkgray;
+                border: 5px solid darkgray;
+            }   
+        </style>
+    </head>
+    <body>
+        <div id="flex" >
+            <!--main container-->
+            <div> <a href="microsoft.com"> Microsoft</a></div>
+            <div>Google</div>
+            <div>Hyderabad</div>
+            <div>Mumbai</div>
+            <div>Secunderabad</div>
+            <div>Delhi hello</div>
+            <div>hello</div>
+        </div>
+            <fieldset style="background-color: yellow; width:80%; height:200px; margin:100px auto;">
+                <div style="display: flex; flex-direction:row; gap:700px;">
+                    <div>
+                        <h3>Student Coordinators:</h3>
+                        <h5>md assrar</h5>
+                        <h5>k vigneshwari</h5>
+                        <h5>b maury</h5>
+                        <h5>saketh</h5>
+                    </div>
+                       <div>      
+                    <h3>Student Coordinators:</h3>
+                    <h5>md assrar</h5>
+                    <h5>k vigneshwari</h5>
+                    <h5>b maury</h5>
+                    <h5>saketh</h5>
+                </div>
+                </div>    
+                <!--  main container -->
+		<div style="font-size:34px; border:5px solid gray;display:flex;flex-wrap: wrap; gap:50px;flex-direction:row;  justify-content:space-evenly;">
+            <!-- sub containers -->
+            <div style="background:#ffff33;">
+                    <!-- content -->
+                    Google
+            </div>
+            <div style="background:#33ffff;">Microsoft</div>
+            <div style="background:#00ff66;">Oracle</div>
+            <div style="background:#ffccff;">AMD</div>
+            <div style="background:#ffff33;">Cisco</div>
+            <div style="background:#33ffff;">Intel</div>
+            <div style="background:#00ff66;">SAP</div>
+            <div style="background:#ffccff;">Salesforce</div>
+            <div style="background:#ffff33;">IBM</div>
+            <div style="background:#33ffff;">ADP</div>
+            <div style="background:#00ff66;">XDP</div>
+            <div style="background:#ffccff;">BlueYonder</div>
+        </div> 
+    </body>
+</html>

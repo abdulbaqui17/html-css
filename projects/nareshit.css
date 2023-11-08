@@ -1,0 +1,13 @@
+#fdiv{
+    font-size: 30px;
+    text-align: center;
+}
+#sdiv{
+    display: grid;
+    grid-template-columns:auto auto auto;
+    text-align: center;
+}
+#sdiv img{
+    width: 80px;
+    height: 80px;
+}
