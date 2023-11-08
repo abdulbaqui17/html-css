@@ -1,0 +1,32 @@
+#fdiv{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+#sdiv{
+    color: white;
+    width: 45%;
+    margin: auto 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
+#grid div a{
+    color: white;
+    text-decoration: none;
+    font-weight: 25px;
+    text-align: right;
+}
+#grid{
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+   row-gap: 100px;
+}
+#grid div:hover{
+    box-shadow: 2px 2px 16px darkgray;
+}
+#grid div{
+    width:300px; 
+    text-align:center;
+}
